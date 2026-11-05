@@ -57,6 +57,9 @@ sourceSets["test"].java {
 
 tasks.withType<Test> {
     systemProperty("java.util.logging.manager", "org.jboss.logmanager.LogManager")
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
 
 allOpen {
