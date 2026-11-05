@@ -12,6 +12,7 @@ env:
 
 jobs:
   build-and-push-image:
+    if: github.ref == 'refs/heads/master'
     runs-on: linux_x64_8_cpu_32_gb
     permissions:
       contents: read
