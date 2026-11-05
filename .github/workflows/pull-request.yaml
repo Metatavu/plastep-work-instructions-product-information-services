@@ -1,0 +1,28 @@
+name: Run native tests
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  native-tests:
+    name: Run native tests
+    runs-on: linux_x64_8_cpu_32_gb
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - name: Setup Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+      - name: Build and test native executable
+        run: |
+          ./gradlew -x test testNative -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false -Dquarkus.native.container-build=true -Dquarkus.native.native-image-xmx=26G
