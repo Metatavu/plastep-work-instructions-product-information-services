@@ -1,4 +1,4 @@
-# plastep-product-information-services
+# plastep-work-instructions-product-information-services
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
