@@ -344,7 +344,7 @@ class LemonRestResource : QuarkusTestResourceLifecycleManager {
     companion object {
         private val logger = LoggerFactory.getLogger(LemonRestResource::class.java)
 
-        var container: GenericContainer<*> = GenericContainer("rodolpheche/wiremock")
+        var container: GenericContainer<*> = GenericContainer("wiremock/wiremock:3.13.2")
             .withLogConsumer {
                 logger.info(it.utf8String)
             }

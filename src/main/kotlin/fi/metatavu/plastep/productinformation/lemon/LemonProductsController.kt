@@ -2,8 +2,8 @@ package fi.metatavu.plastep.productinformation.lemon
 
 import fi.metatavu.plastep.lemon.client.models.*
 import org.slf4j.Logger
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Controller for Lemonsoft products

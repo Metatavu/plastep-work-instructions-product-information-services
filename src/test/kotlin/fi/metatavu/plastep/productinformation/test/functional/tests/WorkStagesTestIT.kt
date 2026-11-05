@@ -4,7 +4,6 @@ import fi.metatavu.plastep.productinformation.client.models.WorkStageState
 import fi.metatavu.plastep.productinformation.test.functional.resources.LemonRestResource
 import io.quarkus.test.common.QuarkusTestResource
 import io.quarkus.test.junit.QuarkusTest
-import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 

@@ -8,9 +8,9 @@ import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.slf4j.Logger
 import java.time.LocalDate
 import java.util.concurrent.TimeUnit
-import javax.annotation.PostConstruct
-import javax.enterprise.context.RequestScoped
-import javax.inject.Inject
+import jakarta.annotation.PostConstruct
+import jakarta.enterprise.context.RequestScoped
+import jakarta.inject.Inject
 
 /**
  * Client for Lemon REST API

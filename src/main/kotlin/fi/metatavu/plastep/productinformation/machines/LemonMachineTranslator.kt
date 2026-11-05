@@ -2,7 +2,7 @@ package fi.metatavu.plastep.productinformation.machines
 
 import fi.metatavu.plastep.lemon.client.models.Machine
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 /**
  * Translates Lemonsoft REST machine to simplified REST object
