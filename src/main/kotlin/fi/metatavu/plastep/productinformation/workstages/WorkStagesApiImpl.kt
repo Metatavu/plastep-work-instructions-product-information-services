@@ -5,10 +5,10 @@ import fi.metatavu.plastep.productinformation.model.WorkStageState
 import fi.metatavu.plastep.productinformation.rest.AbstractApi
 import fi.metatavu.plastep.productinformation.spec.WorkStagesApi
 import java.time.LocalDate
-import javax.enterprise.context.RequestScoped
-import javax.inject.Inject
-import javax.ws.rs.Consumes
-import javax.ws.rs.core.Response
+import jakarta.enterprise.context.RequestScoped
+import jakarta.inject.Inject
+import jakarta.ws.rs.Consumes
+import jakarta.ws.rs.core.Response
 
 @RequestScoped
 @Suppress ("UNUSED")

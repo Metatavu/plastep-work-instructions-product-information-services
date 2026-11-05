@@ -8,8 +8,8 @@ import fi.metatavu.plastep.productinformation.model.WorkStageState
 import fi.metatavu.plastep.productinformation.workstages.LemonWorkStagesTranslator
 import org.slf4j.Logger
 import java.time.LocalDate
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Controller for Lemonsoft workStages

@@ -1,6 +1,6 @@
 package fi.metatavu.plastep.productinformation.test.functional.impl
 
-import com.jayway.jsonpath.internal.path.PathCompiler.fail
+import org.junit.jupiter.api.fail
 import fi.metatavu.jaxrs.test.functional.builder.auth.AccessTokenProvider
 import fi.metatavu.plastep.productinformation.client.apis.ProductSubWorkStagesApi
 import fi.metatavu.plastep.productinformation.client.infrastructure.ApiClient

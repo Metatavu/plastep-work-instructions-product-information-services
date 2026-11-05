@@ -1,9 +1,9 @@
 package fi.metatavu.plastep.productinformation.rest
 
-import javax.enterprise.context.RequestScoped
-import javax.ws.rs.core.Context
-import javax.ws.rs.core.Response
-import javax.ws.rs.core.SecurityContext
+import jakarta.enterprise.context.RequestScoped
+import jakarta.ws.rs.core.Context
+import jakarta.ws.rs.core.Response
+import jakarta.ws.rs.core.SecurityContext
 
 /**
  * Abstract base class for all API services
