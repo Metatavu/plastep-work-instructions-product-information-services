@@ -25,4 +25,4 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
       - name: Build and test native executable
         run: |
-          ./gradlew -x test testNative -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false -Dquarkus.native.container-build=true -Dquarkus.native.native-image-xmx=26G
+          ./gradlew test testNative -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false -Dquarkus.native.container-build=true -Dquarkus.native.native-image-xmx=26G
