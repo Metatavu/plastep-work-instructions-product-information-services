@@ -90,7 +90,7 @@ val generateLemonClient = tasks.register("generateLemonClient", GenerateTask::cl
 
 val generateApiSpec = tasks.register("generateApiSpec",GenerateTask::class){
     setProperty("generatorName", "kotlin-server")
-    setProperty("inputSpec",  "$rootDir/plastep-product-information-services-spec/swagger.yaml")
+    setProperty("inputSpec",  "$rootDir/plastep-work-instructions-product-information-services-spec/swagger.yaml")
     setProperty("outputDir", "$buildDir/generated/api-spec")
     setProperty("apiPackage", "fi.metatavu.plastep.productinformation.spec")
     setProperty("invokerPackage", "fi.metatavu.plastep.productinformation.invoker")
@@ -109,7 +109,7 @@ val generateApiSpec = tasks.register("generateApiSpec",GenerateTask::class){
 val generateApiClient = tasks.register("generateApiClient",GenerateTask::class){
     setProperty("generatorName", "kotlin")
     setProperty("library", "jvm-okhttp3")
-    setProperty("inputSpec",  "$rootDir/plastep-product-information-services-spec/swagger.yaml")
+    setProperty("inputSpec",  "$rootDir/plastep-work-instructions-product-information-services-spec/swagger.yaml")
     setProperty("outputDir", "$buildDir/generated/api-client")
     setProperty("packageName", "fi.metatavu.plastep.productinformation.client")
     this.configOptions.put("dateLibrary", "string")
