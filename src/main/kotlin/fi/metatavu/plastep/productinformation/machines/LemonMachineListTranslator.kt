@@ -3,8 +3,8 @@ package fi.metatavu.plastep.productinformation.machines
 import fi.metatavu.plastep.lemon.client.models.MachineListResult
 import fi.metatavu.plastep.productinformation.model.MachinesListResponse
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translates Lemon machine list response to REST machine list response

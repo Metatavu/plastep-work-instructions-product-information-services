@@ -4,8 +4,8 @@ import fi.metatavu.plastep.lemon.client.models.ProductStructureNode
 import fi.metatavu.plastep.productinformation.lemon.LemonProductsController
 import fi.metatavu.plastep.productinformation.model.Product
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translates Lemon product to REST product

@@ -3,8 +3,8 @@ package fi.metatavu.plastep.productinformation.products
 import fi.metatavu.plastep.lemon.client.models.ProductListResult
 import fi.metatavu.plastep.productinformation.model.ProductsListResponse
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translates Lemon result of product listing to integeation service product list response

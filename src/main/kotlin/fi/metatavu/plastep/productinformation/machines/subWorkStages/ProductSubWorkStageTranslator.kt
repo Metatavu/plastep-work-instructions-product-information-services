@@ -7,8 +7,8 @@ import fi.metatavu.plastep.productinformation.workstages.LemonWorkStagesTranslat
 import java.time.LocalDateTime
 import java.time.OffsetDateTime
 import java.time.ZoneOffset
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translator for Lemonsoft product sub work stages

@@ -1,4 +1,4 @@
-# plastep-product-information-services
+# plastep-work-instructions-product-information-services
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -26,7 +26,7 @@ The application is now runnable using `java -jar build/quarkus-app/quarkus-run.j
 
 If you want to build an _über-jar_, execute the following command:
 ```shell script
-./gradlew build -Dquarkus.package.type=uber-jar
+./gradlew build -Dquarkus.package.jar.type=uber-jar
 ```
 
 The application, packaged as an _über-jar_, is now runnable using `java -jar build/*-runner.jar`.
@@ -35,19 +35,34 @@ The application, packaged as an _über-jar_, is now runnable using `java -jar bu
 
 You can create a native executable using: 
 ```shell script
-./gradlew build -Dquarkus.package.type=native
+./gradlew build -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false
 ```
 
 Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
 ```shell script
-./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
+./gradlew build -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false -Dquarkus.native.container-build=true
 ```
 
 You can then execute your native executable with: `./build/plastep-product-information-services-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/gradle-tooling.
 
+## Running the tests
+
+The tests need Docker for the Keycloak dev service and the WireMock container that stands in for Lemon.
+
+```shell script
+./gradlew test
+```
+
+The native functional tests build the native executable in a container and run the tests against it:
+
+```shell script
+./gradlew testNative -Dquarkus.native.container-build=true
+```
+
+GitHub Actions runs the native functional tests on every pull request to `develop`, and publishes the image to `ghcr.io/metatavu/plastep-work-instructions-product-information-services` on pushes to `develop` and `master`.
+
 ## Related Guides
 
-- AWS Lambda HTTP ([guide](https://quarkus.io/guides/amazon-lambda-http)): Allow applications written for a servlet container to run in AWS Lambda
 - Kotlin ([guide](https://quarkus.io/guides/kotlin)): Write your services in Kotlin

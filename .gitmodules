@@ -1,3 +1,3 @@
 [submodule "plastep-product-information-services-spec"]
-	path = plastep-product-information-services-spec
-	url = https://github.com/Metatavu/plastep-product-information-services-spec.git
+	path = plastep-work-instructions-product-information-services-spec
+	url = https://github.com/Metatavu/plastep-work-instructions-product-information-services-spec.git

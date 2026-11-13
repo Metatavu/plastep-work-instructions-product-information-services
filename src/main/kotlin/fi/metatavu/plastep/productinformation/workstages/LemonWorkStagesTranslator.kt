@@ -4,7 +4,7 @@ import fi.metatavu.plastep.productinformation.model.MainWorkStage
 import fi.metatavu.plastep.productinformation.model.SubWorkStage
 import fi.metatavu.plastep.productinformation.model.WorkStageState
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 /**
  * Translates Lemon work stage to REST WorkStage

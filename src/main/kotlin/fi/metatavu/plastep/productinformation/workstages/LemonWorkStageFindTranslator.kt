@@ -3,8 +3,8 @@ package fi.metatavu.plastep.productinformation.workstages
 import fi.metatavu.plastep.lemon.client.models.MainWorkStageResponse
 import fi.metatavu.plastep.productinformation.model.WorkStageFindResponse
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translates Lemonsoft response for finding work stage to integrations service rest response

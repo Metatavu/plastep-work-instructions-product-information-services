@@ -4,8 +4,8 @@ import fi.metatavu.plastep.lemon.client.models.MainWorkStage
 import fi.metatavu.plastep.lemon.client.models.WorkStageListResponse
 import fi.metatavu.plastep.productinformation.model.WorkStagesListResponse
 import fi.metatavu.plastep.productinformation.rest.AbstractTranslator
-import javax.enterprise.context.ApplicationScoped
-import javax.inject.Inject
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 
 /**
  * Translates the Lemon API WorkStageListResponse to the integration WorkStagesListResponse
